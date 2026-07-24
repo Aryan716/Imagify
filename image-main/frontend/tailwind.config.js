@@ -8,6 +8,7 @@ export default {
     extend: {
       animation: {
         blob: "blob 7s infinite",
+        "loading-bar": "loading-bar 10s ease-in-out forwards",
       },
       keyframes: {
         blob: {
@@ -15,6 +16,10 @@ export default {
           "33%": { transform: "translate(30px, -50px) scale(1.1)" },
           "66%": { transform: "translate(-20px, 20px) scale(0.9)" },
           "100%": { transform: "translate(0px, 0px) scale(1)" },
+        },
+        "loading-bar": {
+          "0%": { width: "0%" },
+          "100%": { width: "100%" }
         }
       }
     },
