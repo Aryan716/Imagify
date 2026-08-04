@@ -18,7 +18,8 @@ jobs:
 
     defaults:
       run:
-        working-directory: frontend
+        working-directory: image-main/frontend
+
 
     steps:
 
@@ -32,7 +33,7 @@ jobs:
           node-version: 20
 
 
-      - name: Install dependencies
+      - name: Install frontend dependencies
         run: npm install
 
 
@@ -47,7 +48,8 @@ jobs:
 
     defaults:
       run:
-        working-directory: backend
+        working-directory: image-main/backend
+
 
     steps:
 
@@ -61,5 +63,5 @@ jobs:
           node-version: 20
 
 
-      - name: Install dependencies
+      - name: Install backend dependencies
         run: npm install
